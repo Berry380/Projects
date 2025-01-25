@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
     srand(time(NULL));
-    int dnum, gct, i, guess; // dnum will be used to select the initial difficulty, and then store the random number after selection
+    int dnum, gct, attempts, guess; // dnum will be used to select the initial difficulty, and then store the random number after selection
 
     // This cout line provides the bulk of the initializtion of the game
     cout << "Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100\n\nPlease select the difficulty level:\n1. Easy (10 chances)\n2. Medium (5 chances)\n3. Hard (3 chances)\n\nEnter your choice: ";
@@ -37,7 +37,7 @@ int main()
         }
 
         dnum = rand() % 100 + 1; // sets a random number between 1-100
-        i = 1;                   // this is a counter for the amount of guesses used
+        attempts = 1;                   // this is a counter for the amount of guesses used
         while (gct > 0)
         {
             cout << "Enter your guess: ";
@@ -46,17 +46,17 @@ int main()
             {
                 gct--;
                 cout << "Incorrect! The number is less than " << guess << "\nGuesses remaining: "<< gct << "\n\n";
-                i++;
+                attempts++;
             }
             else if (guess < dnum)
             {
                 gct--;
                 cout << "Incorrect! The number is more than " << guess << "\nGuesses remaining: "<< gct << "\n\n";
-                i++;
+                attempts++;
             }
             else
             {
-                cout << "Congratulations! You guessed the correct number in " << i << " attempt(s).";
+                cout << "Congratulations! You guessed the correct number in " << attempts << " attempt(s).";
                 break;
             }
         }
