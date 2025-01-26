@@ -21,7 +21,7 @@ int main()
     	gct = 0;
     	do{
     	    	cin >> dnum;
-    	   	 /*IF THE INPUT IS NOT THE CORRECT DATA TYPE, THE FOLLOWING FUNCTION EXECUTES*/
+    	   	 //IF THE INPUT IS NOT THE CORRECT DATA TYPE, THE FOLLOWING FUNCTION EXECUTES
     	    	if(cin.fail()){
     	    		cout << "You have entered a non integer number, please relaunch the game\n\n";
     	    		exit(dnum);
