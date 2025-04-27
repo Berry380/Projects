@@ -1,0 +1,21 @@
+STEPS FOR FILLING OUT A CHARECTOR SHEET:
+
+In order to automatically fill a charector sheet in the most appropriate way, we must group everything into portions. 
+The way I see this is to break each aspect of the charector into refrences to the charetors stats
+For example, all of the ability checks are related to a specific stat
+Using this, we should set some pre determined rules for each class to properly define what each class would want
+
+This is the list prefrences go from left to right: 
+
+Barbarian - STR, CON, DEX, WIS,  CHAR, INT
+Bard - CHAR, DEX, CON, STR, WIS, INT 
+Cleric - WIS, STR, CON, DEX, CHAR, INT
+Druid - WIS, DEX, CON, INT (bc nature checks), STR, CHAR 
+Fighter - STR, CON, DEX, WIS, INT, CHAR
+Monk - DEX, WIS, STR(Athletics checks),  
+Paladin - STR & CHAR
+Ranger - DEX & WIS 
+Rogue - DEX & WIS 
+Sorcerer - CHAR & DEX 
+Warlock - CHAR & DEX
+Wizard - INT & DEX

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Helper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to DM Helper</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Character Sheets</a></li>
+            <li><a href="#NPC">NPC's</a></li>
+            <li><a href="#Combat">Combat</a></li>
+        </ul>
+    <main>
+        <p>Your go-to tool for managing your campaigns.</p>
+        <section id="Characters" class="sheets">
+                <h1>Character sheet maker</h1>
+                <p class = "Description">PC die? Need a back up charecter sheet? Use this simple tool that can make a character sheet given only a few prompts</p>
+                <p class = "subtitle">Using a specific race, class, and background, we can generate a sheet for you to use in a pinch</p>
+                <div class= "inputs">
+                    <form id="inputForm">
+
+                        <label for="class">Class: </label>
+                        <select class = "dropdown" name = "class">
+                            <option value="Barbarian">Barbarian</option>
+                            <option value="Bard">Bard</option>
+                            <option value="Cleric">Cleric</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Fighter">Fighter</option>
+                            <option value="Monk">Monk</option>
+                            <option value="Paladin">Paladin</option>
+                            <option value="Ranger">Ranger</option>
+                            <option value="Rogue">Rogue</option>
+                            <option value="Sorcerer">Sorcerer</option>
+                            <option value="Warlock">Warlock</option>
+                            <option value="Wizard">Wizard</option>
+                        </select>
+
+                        <br><br>
+
+                        <label for="race">Race: </label>
+                        <select class = "dropdown" name = "race">
+                            <option value = "Dwarf">Dwarf</option>
+                            <option value = "Elf">Elf</option>
+                            <option value = "Halfling">Halfling</option>
+                            <option value = "Human">Human</option>
+                            <option value = "Dragonborn">Dragonborn</option>
+                            <option value = "Gnome">Gnome</option>
+                            <option value = "Half-Elf">Half-Elf</option>
+                            <option value = "Half-Orc">Half-Orc</option>
+                            <option value = "Tiefling">Tiefling</option>
+                        </select>
+
+                        <br><br>
+
+                        <label for="background">Background: </label>
+                        <select class = "dropdown" name = "background">
+                            <option value = "Acolyte">Acolyte</option>
+                            <option value = "Charlatan">Charlatan</option>
+                            <option value = "Criminal">Criminal</option>
+                            <option value = "Entertainer">Entertainer</option>
+                            <option value = "Folk Hero">Folk Hero</option>
+                            <option value = "Guild Artisan">Guild Artisan</option>
+                            <option value = "Hermit">Hermit</option>
+                            <option value = "Noble">Noble</option>
+                            <option value = "Outlander">Outlander</option>
+                            <option value = "Sage">Sage</option>
+                            <option value = "Sailor">Sailor</option>
+                            <option value = "Soldier">Soldier</option>
+                            <option value = "Urchin">Urchin</option>
+                        </select>
+                        <br><br>
+
+                        <label for="level">Level: </label>
+                        <input type="number" id="level" name="level" min="1" max="20" value="1">
+                        <br><br>
+
+                        <input type="submit" value="Generate Character Sheet">
+                    </form>
+                </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
