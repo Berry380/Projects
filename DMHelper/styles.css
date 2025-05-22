@@ -1,0 +1,157 @@
+/* Fantasy Google Font */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=IM+Fell+English+SC&display=swap');
+
+body {
+    background: #f9f6e3 url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    color: #3e2723;
+    font-family: 'IM Fell English SC', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+header h1, header h2 {
+    display: inline-block;
+}
+
+header h1 {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+header h1, section h1, nav ul li a {
+    font-family: 'UnifrakturCook', cursive;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+    color: #6d4c1e;
+    text-shadow: 1px 1px 0 #fffbe6, 2px 2px 2px #bfa76a;
+}
+header h2 {
+    display: block;
+    font-family: 'UnifrakturCook', cursive;
+    letter-spacing: 2px;
+    font-size: 1em;         /* Smaller font size */
+    color: #442f13;
+    text-shadow: 1px 1px 0 #fffbe6, 2px 2px 2px #bfa76a;
+    margin-top: 0;          /* Remove extra space above */
+}
+
+main{
+    margin: 0 auto;
+    padding: 2em;
+
+    background: #f9f6e3 url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+}
+
+nav {
+    background: #bfa76a;
+    border-bottom: 4px solid #6d4c1e;
+    box-shadow: 0 2px 8px #bfa76a55;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 1em;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3e2723;
+    font-family: 'UnifrakturCook', cursive;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #a67c52;
+}
+
+#output {
+    background: rgba(255, 248, 220, 0.95);
+    border: 2px dashed #bfa76a;
+    border-radius: 10px;
+    margin: 2em auto;
+    padding: 1.5em;
+    max-width: 600px;
+    font-family: 'IM Fell English SC', serif;
+    color: #3e2723;
+    font-size: 1.1em;
+}
+.sheets {
+    background: rgba(255, 248, 220, 0.95);
+    border: 2px solid #bfa76a;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #bfa76a33;
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 600px;
+}
+
+.inputs label {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.1em;
+    color: #6d4c1e;
+}
+
+.inputs .dropdown, .inputs input[type="number"] {
+    font-family: 'IM Fell English SC', serif;
+    background: #fffbe6;
+    border: 1.5px solid #bfa76a;
+    border-radius: 6px;
+    padding: 0.4em 1em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: #3e2723;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.inputs .dropdown:focus, .inputs input[type="number"]:focus {
+    border: 2px solid #a67c52;
+}
+
+input[type="submit"] {
+    font-family: 'UnifrakturCook', cursive;
+    background: linear-gradient(90deg, #bfa76a 60%, #fffbe6 100%);
+    color: #3e2723;
+    border: 2px solid #6d4c1e;
+    border-radius: 8px;
+    padding: 0.6em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #bfa76a55;
+    transition: background 0.2s, color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #a67c52;
+    color: #fffbe6;
+}
+
+.Description, .subtitle {
+    font-size: 1.1em;
+    color: #5d4631;
+    margin-bottom: 1em;
+}
+
+#output {
+    background: rgba(255, 248, 220, 0.95);
+    border: 2px dashed #bfa76a;
+    border-radius: 10px;
+    margin: 2em auto;
+    padding: 1.5em;
+    max-width: 600px;
+    font-family: 'IM Fell English SC', serif;
+    color: #3e2723;
+    font-size: 1.1em;
+}

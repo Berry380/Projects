@@ -1,0 +1,62 @@
+/* Fantasy Google Font */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=IM+Fell+English+SC&display=swap');
+
+body {
+    background: #f9f6e3 url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    color: #3e2723;
+    font-family: 'IM Fell English SC', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-family: 'UnifrakturCook', cursive;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+    color: #6d4c1e;
+    text-shadow: 1px 1px 0 #fffbe6, 2px 2px 2px #bfa76a;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+nav {
+    background: #bfa76a;
+    border-bottom: 4px solid #6d4c1e;
+    box-shadow: 0 2px 8px #bfa76a55;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 1em;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3e2723;
+    font-family: 'UnifrakturCook', cursive;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #a67c52;
+}
+
+#output {
+    background: rgba(255, 248, 220, 0.95);
+    border: 2px dashed #bfa76a;
+    border-radius: 10px;
+    margin: 2em auto;
+    padding: 1.5em;
+    max-width: 600px;
+    font-family: 'IM Fell English SC', serif;
+    color: #3e2723;
+    font-size: 1.1em;
+    box-shadow: 0 4px 16px #bfa76a33;
+}

@@ -1,5 +1,5 @@
 // sheet.js
-import { PDFDocument } from 'pdf-lib'
+//import { PDFDocument } from 'pdf-lib'
 // Entry point
 (function () {
     console.log("Character Sheet Module Loaded");
@@ -9,19 +9,12 @@ import { PDFDocument } from 'pdf-lib'
         console.log("Initializing character sheet...");
         // Load character data from local storage
         const characterData = localStorage.getItem('formData');
+        const classIndex = localStorage.getItem('selectedClassIndex');
         if (characterData) {
             const character = JSON.parse(characterData);
             console.log("Character data loaded:", character);
-            // Populate the sheet with character data
-            console.log("character", character);
-            outputDiv.innerHTML += `<p>
-            Character race: ${character.race}
-            <br><br>
-            Character class: ${character.class}
-            <br><br>
-            Character level: ${character.level}
-            </p>`;
-            // Add more fields as needed
+            console.log("Class index loaded:", classIndex);
+            //statMatrix stores the prefrence order of all stats for each class
             let statMatrix = [
                 /* artificer */ ["INT", "CON", "DEX", "WIS", "STR", "CHA"],
                 /* barbarian */ ["STR", "CON", "DEX", "WIS", "CHA", "INT"],
@@ -37,6 +30,16 @@ import { PDFDocument } from 'pdf-lib'
                 /* warlock */ ["CHA", "CON", "DEX", "WIS", "INT", "STR"],
                 /* wizard */ ["INT", "CON", "DEX", "WIS", "CHA", "STR"]          
             ];
+            const selectedClassIndex = statMatrix[classIndex];
+            outputDiv.innerHTML += `<p>
+            Character race: ${character.race}
+            <br><br>
+            Character class: ${character.class}
+            <br><br>
+            Character level: ${character.level}
+            <br><br>
+            Stat order: ${selectedClassIndex}
+            </p>`;
         } else {
             console.log("No character data found.");
         }
