@@ -14,7 +14,7 @@
             const character = JSON.parse(characterData);
             console.log("Character data loaded:", character);
             console.log("Class index loaded:", classIndex);
-            //statMatrix stores the prefrence order of all stats for each class
+            // statMatrix stores the preference order of all stats for each class
             let statMatrix = [
                 /* artificer */ ["INT", "CON", "DEX", "WIS", "STR", "CHA"],
                 /* barbarian */ ["STR", "CON", "DEX", "WIS", "CHA", "INT"],
@@ -30,7 +30,20 @@
                 /* warlock */ ["CHA", "CON", "DEX", "WIS", "INT", "STR"],
                 /* wizard */ ["INT", "CON", "DEX", "WIS", "CHA", "STR"]          
             ];
-            const selectedClassIndex = statMatrix[classIndex];
+            const statOrder = statMatrix[classIndex];
+
+            // Standard array
+            const standardArray = [15, 14, 13, 12, 10, 8];
+
+            // Map stat names to values based on the order
+            const stats = {};
+            statOrder.forEach((stat, i) => {
+                stats[stat] = standardArray[i];
+            });
+
+            // Define the standard D&D sheet order
+            const sheetOrder = ["STR", "DEX", "CON", "INT", "WIS", "CHA"];
+
             outputDiv.innerHTML += `<p>
             Character race: ${character.race}
             <br><br>
@@ -38,7 +51,8 @@
             <br><br>
             Character level: ${character.level}
             <br><br>
-            Stat order: ${selectedClassIndex}
+            <b>Assigned Stats (Sheet Order):</b><br><br>
+            ${sheetOrder.map(stat => `${stat}: ${stats[stat] ?? "-"}`).join("<br>")}
             </p>`;
         } else {
             console.log("No character data found.");
