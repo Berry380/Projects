@@ -46,16 +46,42 @@
                         <br><br>
 
                         <label for="race">Race: </label>
-                        <select class = "dropdown" name = "race">
-                            <option value = "Dwarf">Dwarf</option>
-                            <option value = "Elf">Elf</option>
-                            <option value = "Halfling">Halfling</option>
-                            <option value = "Human">Human</option>
-                            <option value = "Dragonborn">Dragonborn</option>
-                            <option value = "Gnome">Gnome</option>
-                            <option value = "Half-Elf">Half-Elf</option>
-                            <option value = "Half-Orc">Half-Orc</option>
-                            <option value = "Tiefling">Tiefling</option>
+                        <select class="dropdown" name="race" id="raceSelect">
+                            <option value="Dwarf">Dwarf</option>
+                            <option value="Elf">Elf</option>
+                            <option value="Halfling">Halfling</option>
+                            <option value="Human">Human</option>
+                            <option value="Dragonborn">Dragonborn</option>
+                            <option value="Gnome">Gnome</option>
+                            <option value="Half-Elf">Half-Elf</option>
+                            <option value="Half-Orc">Half-Orc</option>
+                            <option value="Tiefling">Tiefling</option>
+                        </select>
+
+                        <select class="dropdown" name="dwarfSubrace" id="subRaceD" style="display:none;">
+                            <option value="Hill Dwarf">Hill Dwarf</option>
+                            <option value="Mtn Dwarf">Mountain Dwarf</option>
+                        </select>
+                            <input type="radio" id="subraceD" name="dwarfSubrace" value="HTML" style ="display:none;">
+                            <label for="html">HTML</label><br>
+                        </input>
+                        
+                        
+                        <select class="dropdown" name="elfSubrace" id="subRaceE" style="display:none;">
+                             <option value="High Elf">High Elf</option>
+                             <option value="Wood Elf">Wood Elf</option>
+                             <option value="Dark Elf">Dark Elf (Drow)</option>
+                        </select>
+
+                        <select class="dropdown" name="halflingSubrace" id="subRaceH" style="display:none;">
+                            <option value="Lightfoot">Lightfoot</option>
+                            <option value="Stout">Stout</option>
+                        </select>
+
+                        <select class="dropdown" name="gnomeSubrace" id="subRaceG" style="display:none;">
+
+                            <option value="Forest Gnome">Forest Gnome</option>
+                            <option value="Rock Gnome">Rock Gnome</option>
                         </select>
 
                         <br><br>
