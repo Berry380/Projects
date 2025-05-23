@@ -51,9 +51,11 @@
             <br><br>
             Character level: ${character.level}
             <br><br>
-            <b>Assigned Stats (Sheet Order):</b><br><br>
+            <b>Assigned Stats (Sheet Order):</b>
+            <br><br>
             ${sheetOrder.map(stat => `${stat}: ${stats[stat] ?? "-"}`).join("<br>")}
             </p>`;
+            
         } else {
             console.log("No character data found.");
         }
