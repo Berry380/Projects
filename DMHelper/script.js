@@ -1,8 +1,11 @@
 // Wait for the page to load
+const form = document.getElementById('inputForm');
+if (!form) {
+    console.error("Form element not found");
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Add event listener for form submission
-    const form = document.getElementById('inputForm');
+
     form.addEventListener('submit', function(e) {
         e.preventDefault();
 
@@ -11,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedClassIndex = classSelect.selectedIndex;
         localStorage.setItem('selectedClassIndex', selectedClassIndex);
 
+        // Get the racial index and store it in local storage
         const formData = new FormData(form);
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -21,4 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = "../DMHelper/CharSheet/sheet.html";
         const result = document.getElementById('result');
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+
 });

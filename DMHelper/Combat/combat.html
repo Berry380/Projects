@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Sheet</title>
-    <link rel="stylesheet" href="../CharSheet/sheet.css">
+    <title>Combat Tracker</title>
+    <link rel="stylesheet" href="sheet.css">
 </head>
 <body>
     <header>
-        <h1>Character Sheet</h1>
+        <h1>Combat Tracker</h1>
     </header>
     <nav>
         <ul>
@@ -17,7 +17,12 @@
             <li><a href="/DMHelper/Combat/combat.html">Combat</a></li>
         </ul>
     </nav>
-<div id = "output"></div>
+    <main>
+        <section class="sheets">
+            <h2>Manage Combat Encounters</h2>
+            <div id="combat-output"></div>
+        </section>
+    </main>
+    <script src="/DMHelper/CharSheet/sheet.css" type="module"></script>
 </body>
-<script src="sheet.js" type="module"></script>
 </html>

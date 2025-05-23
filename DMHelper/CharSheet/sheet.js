@@ -10,10 +10,12 @@
         // Load character data from local storage
         const characterData = localStorage.getItem('formData');
         const classIndex = localStorage.getItem('selectedClassIndex');
+        const raceIndex = localStorage.getItem('selectedRacialIndex');
         if (characterData) {
             const character = JSON.parse(characterData);
             console.log("Character data loaded:", character);
             console.log("Class index loaded:", classIndex);
+            console.log("Race index loaded:", raceIndex);
             // statMatrix stores the preference order of all stats for each class
             let statMatrix = [
                 /* artificer */ ["INT", "CON", "DEX", "WIS", "STR", "CHA"],
@@ -49,13 +51,15 @@
             <br><br>
             Character class: ${character.class}
             <br><br>
+            Character background: ${character.background}
+            <br><br>
             Character level: ${character.level}
             <br><br>
             <b>Assigned Stats (Sheet Order):</b>
             <br><br>
             ${sheetOrder.map(stat => `${stat}: ${stats[stat] ?? "-"}`).join("<br>")}
             </p>`;
-            
+
         } else {
             console.log("No character data found.");
         }

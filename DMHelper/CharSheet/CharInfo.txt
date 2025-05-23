@@ -1,0 +1,34 @@
+Racial Features (ADD FEATURES LATER; ONLY STATS RN):
+DWARF: +2 CON
+    HILL: +1 Wis
+    MTN: +2 STR
+ELF: DEX +2
+    HIGH: +1 INT
+    WOOD: +1 WIS
+    DROW: +1 CHA
+HALFLING: +2 DEX
+    LF: +1 CHAR
+    STOUT: +1 CON
+HUMAN: ALL +1
+DRAGONBORN: +2 STR & +1 CHA
+GNOME: +2 INT
+    FOREST: +1 DEX
+    ROCK: +1 CON
+HALF-ELF: +2 CHA, CHOOSE 2 +1 (GO OFF PREFRECNE TABLE)
+HALF-ORC: +2 STR +1 CON
+TIEFLING: +1 INT +2 CHAR
+
+
+Backgrounds:
+Acolyte: +2 Wis, +1 Int
+Charlatan: +2 Cha, +1 Dex
+Criminal: +2 Dex, +1 Int
+Entertainer: +2 Cha, +1 Dex
+Folk Hero:  
+Guild Artisan: 
+Hermit:
+Noble:
+Outlander:
+Sage:
+Soldier:
+Urchin:
