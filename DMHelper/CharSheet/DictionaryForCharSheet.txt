@@ -1,0 +1,90 @@
+Defining a Dictionary:
+/* '_' <--- Means space*/
+/*Stat block*/
+Contains ones with a space on the end unmarked
+                        VVVVVVVVVV
+STR
+STRmod
+DEX
+DEXmod_
+CON
+CONmod
+INT
+INTmod
+WIS
+WISmod
+CHA
+CHAmod
+ProfBonus
+                      ^^^^^^^^^^^^^
+/*ST -> saving throw*/
+ST Strength
+ST Dexterity
+ST Constitution
+ST Intellegence
+ST Wisdom
+ST Charisma
+
+/*ST checkboxes*/
+
+Check Box 11 //strength
+
+Check Box 18-22 //dex - cha
+
+/*Skills*/
+Acrobatics
+Animal
+Arcana
+Athletics
+Deception_
+History_
+Insight
+Intimidation
+Ivestigaiton
+Medicine
+Nature
+Perception_
+Performance
+Persuasion
+Religion
+SleightofHand
+Stealth_
+Survival
+
+/*Skills checkbooxes*/
+
+Check Box 23 - 40
+
+/*Combat*/
+
+AC
+Initiative
+Speed
+HPMax
+HPCurrent
+HPTemp
+HDTotal
+HD
+
+/*Equipment*/
+
+Wpn Name
+Wpn Name 2
+Wpn Name 3
+Wpn1 AtkBonus
+Wpn2 AtkBonus_
+Wpn3 AtkBonus_
+Wpn1 Damage
+Wpn2 Damage_
+Wpn3 Damage_
+AttackSpellcasting
+Equipment
+
+/*Personality*/
+
+PersonalityTraits
+Ideals
+Bonds
+Flaws
+Features and Traits
+
