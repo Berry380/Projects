@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SIEM Demo - OpenGov</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>SIEM Demo Dashboard</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="#">SIEM Demo</a>
+    </nav>
+  </header>
+  <main>
+    <section id="upload-section">
+      <h2>Upload Log File</h2>
+      <input type="file" id="logFileInput" accept=".csv,.json">
+      <button id="uploadBtn">Upload & Analyze</button>
+    </section>
+    <section id="dashboard">
+      <h2>Log Analysis</h2>
+      <canvas id="eventChart"></canvas>
+      <div id="alerts"></div>
+    </section>
+    <section id="search-section">
+      <h2>Search Logs</h2>
+      <input type="text" id="searchInput" placeholder="Search by IP, user, event...">
+      <button id="searchBtn">Search</button>
+      <div id="searchResults"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

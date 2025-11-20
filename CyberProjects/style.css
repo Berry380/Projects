@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1em;
+}
+nav a {
+  color: #fff;
+  margin-right: 1em;
+  text-decoration: none;
+}
+main {
+  padding: 2em;
+}
+section {
+  background: #fff;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+#alerts {
+  margin-top: 1em;
+  color: #c0392b;
+  font-weight: bold;
+}
